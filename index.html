@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assetst/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
+    <title>ЭКСПОФОРУМ</title>
+  </head>
+  <body>
+
+    <header class="header" id="header">
+
+        <div class="header__inner">
+          <div class="header__logo">
+            <svg width="176" height="24" viewBox="0 0 176 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect width="175.273" height="24" fill="url(#pattern0)"/>
+            <defs>
+              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0" transform="scale(0.00414938 0.030303)"/>
+              </pattern>
+              <image id="image0" width="241" height="33" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPEAAAAhCAYAAAAI9U0mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAF52lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDUgNzkuMTYzNDk5LCAyMDE4LzA4LzEzLTE2OjQwOjIyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIwLTAxLTA3VDEzOjA0KzAzOjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMC0wMS0wN1QxMzowNDoyOCswMzowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMC0wMS0wN1QxMzowNDoyOCswMzowMCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpjMWJiMDhlOC01OWE0LTRmNDEtOThmNC02YjE3MWZlNjAwNmUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OEVDNTlEQzlCMzI2MTFFMzkzNTlFODcyQzgzNzIwQUYiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo4RUM1OURDOUIzMjYxMUUzOTM1OUU4NzJDODM3MjBBRiIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjhFQzU5REM2QjMyNjExRTM5MzU5RTg3MkM4MzcyMEFGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjhFQzU5REM3QjMyNjExRTM5MzU5RTg3MkM4MzcyMEFGIi8+IDx4bXBNTTpIaXN0b3J5PiA8cmRmOlNlcT4gPHJkZjpsaSBzdEV2dDphY3Rpb249InNhdmVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOmMxYmIwOGU4LTU5YTQtNGY0MS05OGY0LTZiMTcxZmU2MDA2ZSIgc3RFdnQ6d2hlbj0iMjAyMC0wMS0wN1QxMzowNDoyOCswMzowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIiBzdEV2dDpjaGFuZ2VkPSIvIi8+IDwvcmRmOlNlcT4gPC94bXBNTTpIaXN0b3J5PiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Prt+V7sAAA1GSURBVHic7Z15tFVVGcB/9z2UwZcPcUil5aywENSiElpUGFE5YKVmmE0YDjjlRKKEWk6lMmkqaZnLrKBcomiFmikBTimigaKSiAoJiDzF6TG8rz++e9a7nLe/ffY555573x/+1jrrvnf2eO89e+9v2vuWRISPKIQuwF7A7kBPYCOwDlgKrKhftzJRQt/HnsB25f/XAcuBV4DNdevZR9AFeKCguoeXXwcBlxp5/gH8MrC+c4GvGWk/A+aV/54M9E+oqw14u/y6Bh1ULwDzgdWB/XHRCBwFfB/4EtDD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"/>
+            </defs></svg>
+          </div>
+          <nav class="header__nav" id="nav">
+            <a class="nav_link" href="#" data-scroll="#side_menu">О комплексе</a>
+            <a class="nav_link" href="#" data-scroll="#side_menu">О компании</a>
+            <a class="nav_link" href="#" data-scroll="#news">Новости</a>
+            <a class="nav_link" href="#" data-scroll="#events">Медиа-банк</a>
+            <a class="nav_link" href="#" data-scroll="#footer">Контакты</a>
+          </nav>
+          <button class="nav_toggle" id="nav_toggle" type="button">
+            <span class="nav_toggle_item">menu</span>
+          </button>
+        </div>
+
+        <hr class="header__hr" color="white">
+    </header>
+    <div class="intro" id="intro">
+      <div class="intro_blackout">
+
+      <div class="container">
+        <div class="intro__inner">
+          <div class="intro__title_block">
+
+            <h1 class="intro__title">экспофорум</h1>
+            <h2 class="intro_subtitle">конгрессно-выставочный центр Санкт-Петербурга</h2>
+            <a href="#" class="btn">
+              О комплексе
+            <div class="btn_arrow"></div>
+            </a>
+          </div>
+
+          <div class="intro_block_wrapper">
+            <div class="wrapper_item wrapper_item1">
+
+              <h2 class="intro_block_wrapper_item_title">Календарь мероприятий</h2>
+              <div class="item_title_btn">
+
+                <a href="#" class="btn">
+                  Подробнее
+                  <div class="btn_arrow"></div>
+                </a>
+
+              </div>
+            </div>
+
+            <div class="wrapper_item wrapper_item2">
+
+
+              <h2 class="intro_block_wrapper_item_title">Как добраться до Экспофорума</h2>
+              <div class="item_title_btn">
+
+                <a href="#" class="btn">
+                  Подробнее
+                  <div class="btn_arrow"></div>
+                </a>
+
+              </div>
+            </div>
+
+            <div class="wrapper_item wrapper_item3">
+
+
+              <h2 class="intro_block_wrapper_item_title">Онлайн-заявка на организацию мероприятия</h2>
+              <div class="item_title_btn">
+
+                <a href="#" class="btn">
+                  Подробнее
+                  <div class="btn_arrow"></div>
+                </a>
+
+              </div>
+            </div>
+
+            <div class="wrapper_item wrapper_item4">
+
+
+              <h2 class="intro_block_wrapper_item_title">План и инфраструктура комплекса</h2>
+              <div class="item_title_btn">
+
+                <a href="#" class="btn">
+                  Подробнее
+                  <div class="btn_arrow"></div>
+                </a>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+
+
+    </div>
+  </div>
+</div>
+  <section class="side_menu" id="side_menu">
+    <div class="container">
+      <div class="side_menu_inner">
+          <ul class="side_menu_list">
+          <li>
+            <div class="side_menu_list_inner_title">
+              Организаторам
+            </div>
+            <div class="side_menu_list_inner_list">
+              <ul>
+                <li class="side_menu_list_inner_list_item"><a href="#">Документы организаторам</a></li>
+                <li class="side_menu_list_inner_list_item"><a href="#">Услуги организаторам</a></li>
+                <li class="side_menu_list_inner_list_item"><a href="#">Выставочные площади</a></li>
+                <li class="side_menu_list_inner_list_item"><a href="#">Рестораны и кафе</a></li>
+                <li class="side_menu_list_inner_list_item"><a href="#">Конгресс-центр</a></li>
+                <li class="side_menu_list_inner_list_item"><a href="#">Спорт-центр</a></li>
+              </ul>
+          </div>
+          </li>
+          <li>
+            <div class="side_menu_list_inner_title">
+              Экспонентам
+            </div>
+            <div class="side_menu_list_inner_list">
+              <ul>
+                <li class="side_menu_list_inner_list_item"><a href="#">Общие условия участия</a></li>
+                <li class="side_menu_list_inner_list_item"><a href="#">Услуги экспонентам</a></li>
+                <li class="side_menu_list_inner_list_item"><a href="#">Документы экспонентам</a></li>
+                <li class="side_menu_list_inner_list_item"><a href="#">Центр деловых контактов</a></li>
+                <li class="side_menu_list_inner_list_item"><a href="#">Забронировать гостиницу</a></li>
+              </ul>
+          </div>
+          </li>
+          <li>
+            <div class="side_menu_list_inner_title">
+              Посетителям
+            </div>
+            <div class="side_menu_list_inner_list">
+              <ul>
+                <li class="side_menu_list_inner_list_item"><a href="#">Сервисы</a></li>
+                <li class="side_menu_list_inner_list_item"><a href="#">Онлайн-регистрация  <br> на мероприятие</a></li>
+                <li class="side_menu_list_inner_list_item"><a href="#">Забронировать гостиницу</a></li>
+                <li class="side_menu_list_inner_list_item"><a href="#">Центр деловых контактов</a></li>
+              </ul>
+          </div>
+          </li>
+          <li>
+            <div class="side_menu_list_inner_title">
+              Прессе
+            </div>
+            <div class="side_menu_list_inner_list">
+              <ul>
+                <li class="side_menu_list_inner_list_item"><a href="#">Аккредитация</a></li>
+                <li class="side_menu_list_inner_list_item"><a href="#">Пресс-служба</a></li>
+                <li class="side_menu_list_inner_list_item"><a href="#">Правила аккредитации</a></li>
+              </ul>
+          </div>
+          </li>
+        </ul>
+    </div>
+    </div>
+  </section>
+  <section class="events" id="events">
+    <div class="container">
+      <div class="events_inner">
+        <div class="events_header">
+          <h1 class="events_header_title">Текущие и будущие мероприятия</h1>
+          <a href="#" class="events_header_link">
+            Все мероприятия
+            <div class="btn_arrow"></div>
+          </a>
+        </div>
+        <ul class="events_list">
+          <li class="events_list_item">
+
+              <img class="banner" src="assetst/img/event (1).png" alt="ЭКСПО ЕЛКА">
+
+            <a href="#" class="events_btn"> <time>2 января 2020 г. – 7 января 2020 г.</time> </a>
+            <h1 class="events_list_item_title">ЭКСПО ЕЛКА</h2>
+            <h2 class="events_list_item_text">Парк интерактивных развлечений</h2>
+          </li>
+
+          <li class="events_list_item">
+            <img class="banner" src="assetst/img/event (2).png" alt="Junwex Петербург">
+            <a href="#" class="events_btn"> <time>5 февраля 2020 г. – 9 февраля 2020 г.</time> </a>
+            <h1 class="events_list_item_title">Junwex Петербург</h2>
+            <h2 class="events_list_item_text">Выставка ювелирных изделий</h2>
+          </li>
+
+          <li class="events_list_item">
+            <img class="banner" src="assetst/img/event (3).png" alt="Невский ларец">
+            <a href="#" class="events_btn"> <time>7 февраля 2020 г. – 9 февраля 2020 г.</time> </a>
+            <h1 class="events_list_item_title">Невский ларец</h2>
+            <h2 class="events_list_item_text">Выставка-ярмарка народных художественных промыслов и ремесел</h2>
+          </li>
+
+          <li class="events_list_item">
+            <img class="banner" src="assetst/img/event (4).png" alt="ПОНАЕХАЛИ!">
+            <a href="#" class="events_btn"> <time>14 февраля 2020 г. – 23 февраля 2020 г.</time> </a>
+            <h1 class="events_list_item_title">ПОНАЕХАЛИ!</h2>
+            <h2 class="events_list_item_text">Специализированная арт-ярмарка</h2>
+          </li>
+
+          <li class="events_list_item">
+            <img class="banner" src="assetst/img/event (5).png" alt="VET.CAMP">
+            <a href="#" class="events_btn"> <time>18 февраля 2020 г. – 21 февраля 2020 г.</time> </a>
+            <h1 class="events_list_item_title">VET.CAMP</h2>
+            <h2 class="events_list_item_text">Конференция для ветеринарных врачей</h2>
+          </li>
+
+          <li class="events_list_item">
+            <img class="banner" src="assetst/img/event (6).png" alt="ExpoHoReCa">
+            <a href="#" class="events_btn"> <time>26 февраля 2020 г. – 28 февраля 2020 г.</time> </a>
+            <h1 class="events_list_item_title">ExpoHoReCa</h2>
+            <h2 class="events_list_item_text">Специализированная выставка</h2>
+          </li>
+
+
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="news" id="news">
+    <div class="container">
+      <div class="news_inner">
+
+        <div class="news_banner_list">
+          <ul>
+            <li>
+              <img class="news_banner" src="assetst/img/news (1).png" alt="news (1)">
+            </li>
+            <li>
+              <img class="news_banner" src="assetst/img/news (2).png" alt="news (2)">
+            </li>
+          </ul>
+        </div>
+
+        <div class="news_list">
+
+          <ul>
+
+            <li>
+              <div class="news_list_header">
+                <h1 class="news_list_header_title">Новости</h1>
+                <a href="#" class="events_header_link">
+                  Все новости
+                  <div class="arrow_black"></div>
+                </a>
+              </div>
+            </li>
+
+            <li class="news_list_item">
+              <a href="#">
+                <img class="news_mini_banner" src="assetst/img/news_mini (1).png" alt="news_mini (1)">
+                <div class="news_list_item_inner">
+                  <a href="#" class="events_btn"> <time>4 января 2020 г.</time> </a>
+                  <h2 class="events_list_item_text">Как объединилась реальность и виртуальность – LIKEE PARTY</h2>
+                </div>
+              </a>
+            </li>
+            <li class="news_list_item">
+              <a href="#">
+                <img class="news_mini_banner" src="assetst/img/news_mini (2).png" alt="news_mini (2)">
+                <div class="news_list_item_inner">
+                  <a href="#" class="events_btn"> <time>2 января 2020 г.</time> </a>
+                  <h2 class="events_list_item_text">Как объединилась реальность и виртуальность – LIKEE PARTY</h2>
+                </div>
+              </a>
+            </li>
+            <li class="news_list_item">
+              <a href="#">
+                <img class="news_mini_banner" src="assetst/img/news_mini (3).png" alt="news_mini (3)">
+                <div class="news_list_item_inner">
+                  <a href="#" class="events_btn"> <time>2 января 2020 г.</time> </a>
+                  <h2 class="events_list_item_text">Как объединилась реальность и виртуальность – LIKEE PARTY</h2>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="container">
+      <div class="footer_inner">
+
+        <ul class="footer_list">
+
+            <li class="footer_item">
+              <h2 class="footer_item_title"><a href="#">О компании</a></h2>
+              <ul class="footer_item_hide">
+                <li><a href="#">О нашей компании</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Партнеры</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </li>
+
+            <li class="footer_item">
+              <h2 class="footer_item_title"><a href="#">Организаторам</a></h2>
+              <ul class="footer_item_hide">
+                <li><a href="#">Преимущества площадки</a></li>
+                <li><a href="#">Структура комплекса</a></li>
+                <li><a href="#">Онлайн-заявка на организацию</a></li>
+                <li><a href="#">Документы организаторам</a></li>
+              </ul>
+            </li>
+
+            <li class="footer_item">
+              <h2 class="footer_item_title"><a href="#">Экспонентам</a></h2>
+              <ul class="footer_item_hide">
+                <li><a href="#">Общие условия участия</a></li>
+                <li><a href="#">Услуги экспонентам</a></li>
+                <li><a href="#">Документы экспонентам</a></li>
+                <li><a href="#">Забронировать гостиницу</a></li>
+              </ul>
+            </li>
+
+
+            <li class="footer_item">
+              <h2 class="footer_item_title"><a href="#">Посетителям</a></h2>
+              <ul class="footer_item_hide">
+                <li><a href="#">Сервисы</a></li>
+                <li><a href="#">Онлайн-регистрация</a></li>
+                <li><a href="#">Забронировать гостиницу</a></li>
+                <li><a href="#">Центр деловых контактов</a></li>
+              </ul>
+            </li>
+
+
+            <li class="footer_item">
+              <h2 class="footer_item_title"><a href="#">Прессе</a></h2>
+              <ul class="footer_item_hide">
+                <li><a href="#">Аккредитация</a></li>
+                <li><a href="#">Пресс-служба</a></li>
+                <li><a href="#">Правила аккредитации</a></li>
+              </ul>
+            </li>
+
+
+            <li class="footer_item">
+              <h2 class="footer_item_title">Приложение</h2>
+              <ul>
+                <li>
+                  <a href="#"><img class="appstore_icon" src="assetst/img/Appstore.svg" alt="appstore_icon"></a>
+                </li>
+                <li>
+                  <a href="#"><img class="GooglePlay_icon" src="assetst/img/GooglePlay.svg" alt="GooglePlay_icon"></a>
+                </li>
+              </ul>
+            </li>
+
+
+            <li class="footer_item social">
+              <h2 class="footer_item_title">Мы в соц. сетях</h2>
+              <ul class="footer_logos">
+                <li><a href="#"><img class="footer_logo" src="assetst/img/you_tube-logo.svg" alt="YouTube"></a></li>
+                <li><a href="#"><img class="footer_logo" src="assetst/img/vk-logo.svg" alt="YovkuTube"></a></li>
+                <li><a href="#"><img class="footer_logo" src="assetst/img/facebook-logo.svg" alt="facebook"></a></li>
+                <li><a href="#"><img class="footer_logo" src="assetst/img/instagram-logo.svg" alt="instagram"></a></li>
+              </ul>
+            </li>
+
+
+
+            <li class="footer_item footer_subcribe">
+              <h2 class="footer_item_title">Подписка на новости</h2>
+              <ul>
+                <li>Получайте все самые последние новости о мероприятиях в Экспофоруме.</li>
+                <li>
+                  <form class="footer_form" action="/" method="post">
+                    <input class="email" type="email" name="name" placeholder="Введите ваш e-mail">
+                    <button class="subcribe_button" type="submit"><img src="assetst/img/email.svg" alt="subcribe_button"></button>
+                  </form>
+                </li>
+              </ul>
+            </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="assetst/js/app.js"></script>
+  </body>
+</html>
